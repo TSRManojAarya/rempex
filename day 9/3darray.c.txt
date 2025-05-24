@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+  int a[3][3][3],i,j,k;
+  printf("enter the number for 3d array:");
+  for(i=0;i<3;i++)
+  { printf("Layer %d:\n", i + 1);
+      for(j=0;j<3;j++)
+      {
+          for(k=0;k<3;k++)
+          {
+          scanf("%d",&a[i][j][k]);
+      }
+  }
+  }
+   printf(" the numbers for 3d array:");
+  for(i=0;i<3;i++)
+  { printf("\nLayer %d:\n", i + 1);
+     
+      for(j=0;j<3;j++)
+      { int add=0;
+          for(k=0;k<3;k++)
+          {
+         // printf("\n");
+          printf("%d\t",a[i][j][k]);
+          add=add+a[i][j][k];
+          
+      }printf("\t %d \n",add);
+  }}
+
+    return 0;
+}
