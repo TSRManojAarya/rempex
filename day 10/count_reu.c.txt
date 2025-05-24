@@ -1,0 +1,24 @@
+#include <stdio.h>
+ int count(int num)
+{
+  int n=1;
+    if(num<0)
+    {
+        return 1;
+    }
+    if( num==0)
+    {
+        return 0;
+    }
+   return n+count(num/10);
+}
+int main()
+{
+   int n,num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    int digits=count(num);
+    printf("sum the number of digits in a number :%d",digits);
+    return 0;
+}
+  

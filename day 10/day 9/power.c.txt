@@ -1,0 +1,21 @@
+#include <stdio.h>
+int pov(int a,int b)
+{
+    int c=1;
+for(int i=0;i<b;i++){//for (int i = 0; i < b; i++) 
+     c=c*a;
+}
+    return c;
+}
+    int main() 
+    {
+int a,b,c;
+printf("enter the  number:");
+scanf("%d",&a);
+printf("enter the  power:");
+scanf("%d",&b);
+int power = pov(a, b);
+    printf("The power of given number is: %d\n",power);
+
+    return 0;
+}

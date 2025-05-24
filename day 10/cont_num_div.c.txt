@@ -1,0 +1,22 @@
+#include <stdio.h>
+int didi(int n){
+    int a=0;
+for(int i=1;i<=n;i++)
+{
+    if(n%i==0)
+    {
+        a=a+i;
+    }
+  } 
+   return a;
+}
+int main()
+{
+int n;
+printf("enter the number: ");
+scanf("%d",&n);
+int sum=didi(n);
+printf("the sum of %d ",sum);
+
+   return 0;
+}

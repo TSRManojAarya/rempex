@@ -1,0 +1,24 @@
+#include <stdio.h>
+int power(int a,int b)
+{
+    if(b==0){
+        return 1;
+    }
+    
+else{
+    //return pov();
+    return a * power(a, b - 1); 
+}
+}
+    int main() 
+    {
+int a,b,c;
+printf("enter the  number:");
+scanf("%d",&a);
+printf("enter the  power:");
+scanf("%d",&b);
+int powers = power(a, b);
+    printf("The power of given number is: %d\n",powers);
+
+    return 0;
+}
